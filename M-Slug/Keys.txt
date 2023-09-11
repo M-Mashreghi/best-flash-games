@@ -1,0 +1,109 @@
+
+COMMON KEYS:
+------------
+
+'1'	- start 1 player game
+'2'     - start 2 player game
+'3'     - Coin1/Select
+'4'     - Coin2/Select
+'5'     - Volume -
+'6'     - Volume +
+'9'     - Full throttle (ON/OFF)
+'F9'    - Take Screenshot
+'F11'   - Save state menu
+'F12'   - Load state menu
+'ESC'	- Exit
+'TAB'	- Toggle in/out to system menu (Key redefenition etc)
+
+----------------------------------------------------------------------
+KEYSETTINGS:
+----------------------------------------------------------------------
+
+Keys:
+UP      - pl1 up
+DOWN    - pl1 down
+LEFT    - pl1 left
+RIGHT   - pl1 right
+A       - pl1 Button1
+S       - pl1 Button2
+D       - pl1 Button3
+F       - pl1 Button4
+
+NUMP 8  - pl2 up
+NUMP 2  - pl2 down
+NUMP 4  - pl2 left
+NUMP 6  - pl2 right
+B       - pl2 Button1
+N       - pl2 Button2
+M       - pl2 Button3
+,       - pl2 Button4
+
+Z       - pl1/pl2 hotkey1
+X       - pl1/pl2 hotkey2
+C       - pl1/pl2 hotkey3
+V       - pl1/pl2 hotkey4
+
+Recomendations:
+---------------
+
+Certain Video cards force VSYNC if you use tripple buffering... this slows
+down the emulation alot. If you have problems with speed turn tripple
+buffering off.
+
+If you have 60hz as refreshrate at res640x480 or res320x240
+use tripple buffering with VSYNC and enable full 
+throttle (press '9') to get the most steady frame rate.
+
+Remember to try all the different options in Video menu to find out what 
+works best on your hardware. And dont forget to checkout interpolation...
+
+
+Known problems/todo list:
+-------------------------
+
+Linescrolling. Lack of this feature gives certain games gfx-glitches.
+
+All games that don't have a preview picture on and are in the game list 
+have some kind of defect either linescrolling or other bugs. The preview
+pics are only included in the complete setup.
+
+MAJOR sound optimisations is needed, we haven't optimised it at all. So its not
+NeoRAGE speedy ;-). Exlude the ADPCM part.
+
+
+Frequently Asked Questions/Troubleshooting:
+-------------------------------------------
+
+How do I overclock a certain game?
+Type ,desired Hz after the game in the ini file. EX: 142096,metslug2.zip,20000000 
+This will set the 68000 cpu to 20 Mhz and will also overclock the z80 the same
+percentage. In some games timing is very important, in that case overclocking
+can make the game unstable. We have already overclocked some games so you might
+not see any difference if you dont overclock them even more.
+
+Where do I have to put my neo-geo bios files?
+You can have them either unpacked or in a zip-file named neogeo.zip. Put them in
+the same directory as NeoRAGEx.exe or in either rompath1 or rompath2.
+
+Where do I put my roms?
+In either rompath1 or rompath2. You can define your own rompaths in the 
+options/directories menu.
+
+How could i enter the menu without exiting the game?
+Hit TAB
+
+How could i enter the Dipswitch settings menu?
+There are 2 ways to do this:
+1. You can use F1 to switch between Dipswitch menu directly. No need to go through
+NeoRAGE menu at all.
+2. Or Enter the machine settings from the main menu. Select MVS Settings=ON. Accept
+changes and reset NeoRAGE. Now you can change the softdip settings as you like.
+When you are done leave the softdip and enter the NeoRAGE Main Menu again. 
+Change MVS-Settings=OFF and reset NeoRAGE.
+Note! Remeber to leave the dip-menu before Pressing F1 or reseting.
+
+What does the (?) mean in the gamelist?
+It means that the game is not a tested dump. But propably will run ok anyway. It has
+nothing to do with the name of the dump!
+
+
